@@ -6,7 +6,7 @@ This guide will help you install Field Papers on your local computer.  The appli
 ####Prerequisites
 
 1. Download and install appropriate version of [Virtualbox](https://www.virtualbox.org/wiki/Downloads) for your host computer.
-2. Download the [Field Papers Appliance .ova file](http://blueraster-outbox.s3.amazonaws.com/fieldpapers-appliance-2.0.4.ova) (md5=a354c1d517192caeb9e9205b67d84ba5)
+2. Download the [Field Papers Appliance .ova file](http://blueraster-outbox.s3.amazonaws.com/fieldpapers-appliance-2.0.4.ova)
 3. Verify appliance MD5 checksum: 
 		
 		MD5 checksum: 
