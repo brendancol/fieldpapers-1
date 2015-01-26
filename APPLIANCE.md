@@ -3,10 +3,10 @@
 
 This guide will help you install the Field Papers on your local computer.  The appliance runs fieldpapers (i.e accounts, atlases, scans, uploads).  The host computer still requires an internet connection to access basemap content.
 
-###Download and install:
+####Download and install:
 
-	[Oracle Virtualbox](https://www.virtualbox.org/wiki/Downloads)
-	[Field Papers Appliance (.ova)](http://blueraster-outbox.s3.amazonaws.com/fieldpapers-appliance-2.0.4.ova)
+[Oracle Virtualbox](https://www.virtualbox.org/wiki/Downloads)
+[Field Papers Appliance (.ova)](http://blueraster-outbox.s3.amazonaws.com/fieldpapers-appliance-2.0.4.ova) md5=a354c1d517192caeb9e9205b67d84ba5 sha1=11241452097341f2a553c2e401970196b3d0993a
 
 Note: Windows installs may require some additional network configuration:
 IP address configuration in Windows:
@@ -20,7 +20,7 @@ IP address configuration in Windows:
 	7. Select the radio for Use the following IP address:
 	8. Address and subnet mask go in the boxes
 
-###Optionally edit your local `hosts` file:
+####Optionally edit your local `hosts` file:
 
 	OSX: $> echo "192.168.33.10 fieldpapers" | sudo tee -a /private/etc/hosts
 
