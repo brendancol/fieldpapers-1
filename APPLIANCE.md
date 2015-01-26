@@ -1,5 +1,4 @@
 ##Installing Field Papers Virtualbox Appliance
----
 
 This guide will help you install Field Papers on your local computer.  The appliance runs fieldpapers accounts, atlases, and uploads independant of fieldpapers.org.  The host computer still requires an internet connection to access basemap content.
 
@@ -15,7 +14,7 @@ This guide will help you install Field Papers on your local computer.  The appli
 		OSX:
 		$> md5 fieldpapers-appliance-2.0.4.ova
 
-		Windows Powershell:
+		Windows Powershell 4:
 		PS> Get-FileHash fieldpapers-appliance-2.0.4.ova -Algorithm MD5
 
 ####Import and start appliance 
@@ -30,7 +29,7 @@ This guide will help you install Field Papers on your local computer.  The appli
 		OSX: 
 		$> echo "192.168.33.10 fieldpapers" | sudo tee -a /private/etc/hosts
 
-		Windows Powershell: 
+		Windows Powershell 4: 
 		PS> Set-HostsEntry -IPAddress 192.168.33.10 -HostName 'fieldpapers' -Description "fieldpapers virtualbox appliance"
 7. Open browser of choice and enter [http://fieldpapers/](http://fieldpapers/)
 
@@ -44,11 +43,8 @@ IP address configuration in Windows:
 4. Right click, go to `Properties`
 5. Highlight Internet Protocol Version 4 (TCP/IPv4)
 6. Click `Properties`
-7. Select the radio for Use the following IP address:`192.168.33.10`
-8. `Address` and `subnet` mask go in the boxes
-
-
-
-		
+7. Select the radio for "Use the following IP address: " `192.168.33.10`
+8. Enter Address `192.168.33.2` and subnet mask `255.255.255.0` in the boxes
+	
 
 
