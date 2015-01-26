@@ -27,11 +27,11 @@ This guide will help you install Field Papers on your local computer.  The appli
 5. Select imported appliance in virtual machine list and `Start`
 6. Edit system `hosts` file
 
-	OSX: 
-	$> echo "192.168.33.10 fieldpapers" | sudo tee -a /private/etc/hosts
+		OSX: 
+		$> echo "192.168.33.10 fieldpapers" | sudo tee -a /private/etc/hosts
 
-	Windows Powershell: 
-	PS> Set-HostsEntry -IPAddress 192.168.33.10 -HostName 'fieldpapers' -Description "fieldpapers virtualbox appliance"
+		Windows Powershell: 
+		PS> Set-HostsEntry -IPAddress 192.168.33.10 -HostName 'fieldpapers' -Description "fieldpapers virtualbox appliance"
 7. Open browser of choice and enter http://fieldpapers/
 
 ###Notes:
