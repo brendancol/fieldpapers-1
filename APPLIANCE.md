@@ -1,14 +1,32 @@
 ##Installing Field Papers Virtualbox Appliance
 ---
 
-This guide will help you install the Field Papers on your local computer.  The appliance runs fieldpapers (i.e accounts, atlases, scans, uploads).  The host computer still requires an internet connection to access basemap content.
+This guide will help you install Field Papers on your local computer.  The appliance runs fieldpapers accounts, atlases, and uploads independant of fieldpapers.org.  The host computer still requires an internet connection to access basemap content.
 
-####Download and install:
+###Prerequisites
 
-[Oracle Virtualbox](https://www.virtualbox.org/wiki/Downloads)
-[Field Papers Appliance (.ova)](http://blueraster-outbox.s3.amazonaws.com/fieldpapers-appliance-2.0.4.ova) md5=a354c1d517192caeb9e9205b67d84ba5 sha1=11241452097341f2a553c2e401970196b3d0993a
+Download and install appropriate version of [Virtualbox](https://www.virtualbox.org/wiki/Downloads) for your host computer.
 
-Note: Windows installs may require some additional network configuration:
+Download the [Field Papers Appliance .ova file](http://blueraster-outbox.s3.amazonaws.com/fieldpapers-appliance-2.0.4.ova) (md5=a354c1d517192caeb9e9205b67d84ba5)
+
+Verify appliance MD5 checksum: 
+	
+	OSX:
+	$> md5 fieldpapers-appliance-2.0.4.ova
+
+	Windows Powershell 4:
+	PS> Get-FileHash fieldpapers-appliance-2.0.4.ova -Algorithm MD5
+
+
+###Import appliance into Virtualbox
+
+1. Open Virtualbox program
+2. Navigate to `File > Import Appliance...`
+3. Browse to downloaded .ova file
+4. Review `System Requirements` and `click Import`
+
+###Notes:
+Windows installs may require some additional network configuration:
 IP address configuration in Windows:
 
 	1. Go to Control Panel -> Network and Sharing Center
