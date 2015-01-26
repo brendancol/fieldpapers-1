@@ -23,6 +23,14 @@ This guide will help you install Field Papers on your local computer.  The appli
 3. Browse to downloaded .ova file
 4. Review `System Requirements` and click `Import`
 5. Select imported appliance in virtual machine list and `Start`
+6. Edit system `hosts` file
+
+	OSX: 
+	$> echo "192.168.33.10 fieldpapers" | sudo tee -a /private/etc/hosts
+
+	Windows Powershell: 
+	PS> Set-HostsEntry -IPAddress 192.168.33.10 -HostName 'fieldpapers' -Description "fieldpapers virtualbox appliance"
+7. Open browser of choice and enter http://fieldpapers/
 
 ###Notes:
 Windows installs may require some additional network configuration:
@@ -37,13 +45,7 @@ IP address configuration in Windows:
 7. Select the radio for Use the following IP address:`192.168.33.10`
 8. `Address` and `subnet` mask go in the boxes
 
-####Optionally edit your local `hosts` file:
 
-	OSX: 
-	$> echo "192.168.33.10 fieldpapers" | sudo tee -a /private/etc/hosts
-
-	Windows Powershell: 
-	PS> Set-HostsEntry -IPAddress 192.168.33.10 -HostName 'fieldpapers' -Description "fieldpapers virtualbox appliance"
 
 		
 
