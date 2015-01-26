@@ -32,9 +32,9 @@ This guide will help you install Field Papers on your local computer.  The appli
 
 		Windows Powershell: 
 		PS> Set-HostsEntry -IPAddress 192.168.33.10 -HostName 'fieldpapers' -Description "fieldpapers virtualbox appliance"
-7. Open browser of choice and enter http://fieldpapers/
+7. Open browser of choice and enter [http://fieldpapers/](http://fieldpapers/)
 
-###Notes:
+#####Notes:
 Windows installs may require some additional network configuration:
 IP address configuration in Windows:
 
