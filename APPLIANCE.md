@@ -9,17 +9,14 @@ This guide will help you install Field Papers on your local computer.  The appli
 2. Download the [Field Papers Appliance .ova file](http://blueraster-outbox.s3.amazonaws.com/fieldpapers-appliance-2.0.4.ova) (md5=a354c1d517192caeb9e9205b67d84ba5)
 3. Verify appliance MD5 checksum: 
 		
-		MD5 checksum: a354c1d517192caeb9e9205b67d84ba5
+		MD5 checksum: 
+		a354c1d517192caeb9e9205b67d84ba5
 	
 		OSX:
-
 		$> md5 fieldpapers-appliance-2.0.4.ova
 
 		Windows Powershell:
-
 		PS> Get-FileHash fieldpapers-appliance-2.0.4.ova -Algorithm MD5
-
-
 
 ####Import and start appliance 
 
