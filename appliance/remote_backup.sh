@@ -1,7 +1,4 @@
 #!/bin/bash
-user=vagrant
-host=192.168.33.10
-remote_dir=/usr/local/fieldpapers/site/
-conn="${user}@${host}"
-backup=`ssh $conn "bash ${remote_dir}/simple_backup.sh | grep tar.gz"`
+conn="vagrant@192.168.33.10" 
+backup=`ssh $conn "bash /usr/local/fieldpapers/site/simple_backup.sh | grep tar.gz"`
 scp "$conn:${backup}" ./
