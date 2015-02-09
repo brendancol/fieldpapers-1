@@ -55,8 +55,10 @@ IP address configuration in Windows:
 
 ####Backup / Restore
 
-1. Download [remote backup script](https://github.com/brendancol/fieldpapers-1/blob/master/appliance/remote_backup.sh) and  [remote restore script](https://github.com/brendancol/fieldpapers-1/blob/master/appliance/remote_restore.sh)
-2. Run backup:
+1. Download [remote backup script](http://blueraster-fieldpapers.s3.amazonaws.com/simple_backup.sh) and  [remote restore script](http://blueraster-fieldpapers.s3.amazonaws.com/simple_restore.sh).  These scripts talk to the field papers appliance, and should be executed from a command line interface.
+1a. Additional Windows Install [Git for Windows](http://git-scm.com/download/win)
+2. Open terminal or Git Bash for Windows
+3. Run backup (note password: vagrant):
 
 ```bash
 $> bash remote_backup.sh
@@ -110,6 +112,4 @@ $> bash remote_restore.sh fieldpapers-backup-2015-02-06.tar.gz
 	fieldpapers-backup-2015-02-06/fieldpapers_db.sql
 	restoring database...
 	restore files...
-
 ```
-
